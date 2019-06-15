@@ -1,0 +1,30 @@
+$white: #fff;
+$black: #000;
+$gray-dark: #191919;
+$gray: #333;
+$gray-background: #ebedef;
+$gray-age: #d0d0d0;
+$gray-icons: #dbdddf;
+$gray-light: #b1b6ba;
+$green: #00B956;
+$blue: #34AAF2;
+
+$page-width: 1280px;
+$margin-big: 80px;
+$margin-small: 16px;
+
+@mixin underlineLink($width, $color) {
+  text-decoration: none;
+  border-bottom: $width solid transparent;
+  transition: border-bottom-color .12s ease;
+
+  &:hover {
+    border-bottom-color: $color;
+  }
+
+  @media (max-width: 720px) {
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
+}

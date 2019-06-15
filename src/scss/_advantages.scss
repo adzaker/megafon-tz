@@ -1,0 +1,67 @@
+.main__advantages {
+  width: 100%;
+  max-width: $page-width;
+  display: flex;
+  flex-flow: row wrap;
+  padding: $margin-big;
+  position: relative;
+  margin: 0 auto;
+
+  .h2 {
+    margin-bottom: $margin-big;
+  }
+
+  @media (max-width: 720px) {
+    padding: 56px 16px;
+
+    .h2 {
+      margin-bottom: 32px;
+      padding-right: 50px;
+    }
+  }
+}
+
+.advantages__descriptionPart {
+  padding-right: 120px;
+
+  h3 {
+    font-weight: 500;
+  }
+
+  @media (max-width: 720px) {
+    padding-right: 0;
+  }
+}
+
+.pointsPart__point {
+  display: flex;
+  padding: 44px 0;
+  border-bottom: 2px solid $gray-background;
+  position: relative;
+  margin: 0 44px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media (max-width: 720px) {
+    margin: 0;
+    flex-direction: column;
+    border-bottom-width: 0;
+    padding: 22px 0;
+  }
+}
+
+.point__icon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: -76px;
+
+  @media (max-width: 720px) {
+    left: 0;
+    position: relative;
+    display: block;
+    margin-bottom: 32px;
+  }
+}

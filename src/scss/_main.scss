@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  width: 100%;
+  font-family: 'Graphik', Roboto, sans-serif;
+  position: relative;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  //& > section:not(.subHeader) {
+  //  width: 100%;
+  //  max-width: $page-width;
+  //  display: flex;
+  //  padding: $margin-big;
+  //  position: relative;
+  //  margin: 0 auto;
+  //}
+}
+
+@import "common";
+@import "header";
+@import "subheader";
+@import "advantages";
+@import "slider";
+@import "rates";
+@import "necessary";
+@import "router";
+@import "faq";
+@import "footer";

@@ -1,0 +1,156 @@
+.main__necessary {
+  width: 100%;
+}
+
+.necessary__necessaryContainer {
+  background: $gray-background;
+  width: 100%;
+  max-width: $page-width;
+  display: flex;
+  flex-direction: column;
+  padding: 0 $margin-big $margin-big;
+  position: relative;
+  margin: 0 auto;
+
+  @media (max-width: 720px) {
+    padding: 0;
+  }
+}
+
+.necessaryContainer__necessaryBlock {
+  width: 100%;
+  padding: $margin-big $margin-big/2;
+  background: $white;
+  display: flex;
+  flex-flow: row wrap;
+
+  @media (max-width: 720px) {
+    padding: 56px 16px;
+  }
+}
+
+.necessaryBlock__descriptionPart {
+  padding-right: 180px;
+
+  @media (max-width: 720px) {
+    padding: 0;
+  }
+}
+
+.necessaryBlock__contentPart {
+  .h3 {
+    margin-bottom: 24px;
+
+    @media (max-width: 720px) {
+      margin-top: 26px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .link {
+    margin-top: 36px;
+  }
+}
+
+.contentPart__contentBlock {
+  padding-bottom: 44px;
+  border-bottom: 1px solid $gray-background;
+  margin-bottom: 44px;
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .link {
+    margin-top: 36px;
+  }
+
+  @media (max-width: 720px) {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.contentBlock__phonesBlock {
+  width: 510px;
+  height: 280px;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 32px;
+
+  @media (max-width: 720px) {
+    width: auto;
+    max-width: calc(100% + 32px);
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+.phonesBlock__phone {
+  width: 255px;
+  min-width: 255px;
+  height: 280px;
+  text-align: center;
+  padding: 34px 24px 0;
+  border: 1px solid $gray-background;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+
+  & + .phonesBlock__phone {
+    margin-left: -1px;
+  }
+
+
+  @media (max-width: 720px) {
+    & + .phonesBlock__phone {
+      width: 261px;
+      min-width: 261px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -1px;
+        width: 16px;
+        height: calc(100% + 2px);
+        border-right: 1px solid $gray-background;
+      }
+    }
+  }
+}
+
+.phone__image {
+  max-height: 170px;
+  height: 100%;
+  width: auto;
+  align-self: center;
+  margin-bottom: 24px;
+}
+
+.phone__priceBubble {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $green;
+  position: absolute;
+  top: 26px;
+  right: 66px;
+
+  .phone__price {
+    color: $white;
+    letter-spacing: -.6px;
+    font-size: 12px;
+  }
+}
+
+.phone__name {
+  font-size: 15px;
+  line-height: 1.33;
+  text-align: left;
+}

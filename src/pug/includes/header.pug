@@ -1,0 +1,40 @@
+header.header
+    include ../../images/headerMobileLinks.svg
+    div.header__upperHeader.upperHeader
+        div.upperHeader__upperContainer.upperContainer
+            div.upperContainer__menuContainer
+                span.upperContainer__mobileTitle Все сайты
+                ul.upperContainer__horizontalMenu.horizontalMenu
+                    li.horizontalMenu__menuItem.menuItem
+                        a(href="#") Частным клиентам
+                    li.horizontalMenu__menuItem.menuItem
+                        a(href="#") Корпоративным клиентам
+                    li.horizontalMenu__menuItem.menuItem
+                        a(href="#") Инвесторам и прессе
+                    li.horizontalMenu__menuItem.menuItem
+                        a(href="#") Интернет-магазин
+            div.upperContainer__regionSelector.regionSelector
+                div.regionSelector__chosenRegion.chosenRegion Московский регион
+                    ul.regionSelector__regionList
+                        li.regionList__item Санкт-Петербургский регион
+                        li.regionList__item Ещё один регион
+                        li.regionList__item И ещё один регион
+    div.header__lowerHeader.lowerHeader
+        div.lowerHeader__lowerContainer.lowerContainer
+            div.lowerHeader__logoContainer
+                img(src="../images/logo.svg")
+            div.lowerHeader__mobileContainer.mobileContainer
+                div.mobileContainer__leftPart
+                    a(href="#")
+                        svg.mobileContainer__icon.-mobileLogo
+                            use(xlink:href="#mobileLogo")
+                div.mobileContainer__rightPart
+                    a(href="#")
+                        svg.mobileContainer__icon.-mobileSearch
+                            use(xlink:href="#mobileSearch")
+                    a(href="#")
+                        svg.mobileContainer__icon.-mobileKey
+                            use(xlink:href="#mobileKey")
+                    a(href="#")
+                        svg.mobileContainer__icon.-mobileHamburger
+                            use(xlink:href="#mobileHamburger")

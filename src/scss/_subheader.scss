@@ -1,0 +1,53 @@
+.main__subHeader {
+  height: 500px;
+  width: 100%;
+  max-width: $page-width;
+  position: relative;
+  margin: 0 auto;
+
+  @media (max-width: 720px) {
+    height: 250px;
+    overflow: hidden;
+  }
+}
+
+.subHeader__background {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+
+  &.-desktop {
+    @media (max-width: 720px) {
+      display: none;
+    }
+  }
+
+  &.-mobile {
+    display: none;
+
+    @media (max-width: 720px) {
+      display: block;
+    }
+  }
+}
+
+.subHeader__text {
+  position: relative;
+  z-index: 10;
+  color: $white;
+  padding-left: $margin-big;
+  padding-top: 120px;
+
+  @media (max-width: 720px) {
+    padding-left: $margin-small;
+    padding-top: 50px;
+    padding-right: 40px;
+  }
+
+  span {
+    margin-top: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+  }
+}

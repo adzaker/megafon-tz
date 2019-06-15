@@ -1,0 +1,28 @@
+section.main__rates
+    div.rates__ratesContainer.ratesContainer
+        div.ratesContainer__ratesHeader
+            h2.h2 Выберите тариф
+            p.text15 Выбирайте тарифы «Включайся!» и используйте возможности VoLTE по максимуму. VoLTE не расходует интернет-трафик вашего тарифа, а звонки по VoLTE уже входят в ваш пакет минут.
+        div.ratesContainer__switcherBlock.switcherBlock
+            div.switcherBlock__switcherButtons.switcherButtons
+                ul.switcherButtons__list
+                    li.switcherButtons__button.-phone.-active Смартфон
+                    li.switcherButtons__button.-tablet Планшет
+                    li.switcherButtons__button.-modem Модем
+                div.switcherBlock__switcherTabs.switcherTabs
+                    include ../../images/ratesIcons.svg
+                    div.switcherTabs__switcherTab.switcherTab.-phone.-active
+                        include ./rates/rate1.pug
+                        include ./rates/rate2.pug
+                        include ./rates/rate3.pug
+                        include ./rates/rate4.pug
+                    div.switcherTabs__switcherTab.switcherTab.-tablet
+                        include ./rates/rate3.pug
+                        include ./rates/rate1.pug
+                        include ./rates/rate4.pug
+                        include ./rates/rate2.pug
+                    div.switcherTabs__switcherTab.switcherTab.-modem
+                        include ./rates/rate4.pug
+                        include ./rates/rate3.pug
+                        include ./rates/rate2.pug
+                        include ./rates/rate1.pug
