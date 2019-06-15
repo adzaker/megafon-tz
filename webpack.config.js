@@ -1,7 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -50,7 +49,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('style.css'),
     new HtmlWebpackPlugin({
-      filename: "./html/index.html",
+      filename: "../index.html",
       template: './src/pug/index.pug'
     }),
     new CopyWebpackPlugin([{
